@@ -1,18 +1,43 @@
 # Java / Maven
 Backend_Java/ProjectDiaryBackendMain/target/
 *.class
+*.jar
+*.war
 
 # React / Node
-Front End ( React App )/node_modules/
+node_modules/
 Front End ( React App )/build/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Build and archive files
+dist/
+build/
+*.out
+*.o
+*.zip
+*.tar.gz
 
 # IDE and OS
 .vscode/
 .idea/
 .DS_Store
+.AppleDouble
 Thumbs.db
+*.swp
+*.bak
+*.old
+*.orig
 
-# Environment and logs
+# Environment, logs, coverage, and generated docs
 .env
 .env.*
 *.log
+*.tmp
+debug.log
+coverage/
+*.lcov
+docs/_build/

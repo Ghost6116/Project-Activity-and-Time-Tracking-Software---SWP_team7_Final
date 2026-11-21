@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracking Report</title>
+
+
+
+
+  <style>
+
+    /* Reset and Base Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header Section */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .filter-dropdown {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .btn-download {
+      padding: 0.8rem 1.2rem;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .btn-download:hover {
+      background-color: #b12d3a;
+    }
+
+    /* Chart Section */
+    .chart-section {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    #timeChart {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .chart-title {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Table Section */
+    .table-section {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+    }
+
+    table th, table td {
+      text-align: left;
+      padding: 1rem;
+      border: 1px solid #e0e0e0;
+    }
+
+    table th {
+      background-color: #f8f9fa;
+      color: #333;
+      font-weight: bold;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    table td {
+      color: #555;
+    }
+
+
+  </style>
+
+</head>
+<body>
+<div class="container">
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Time Tracking Report</h1>
+    <div class="header-controls">
+      <select class="filter-dropdown">
+        <option value="7days">Last 7 Days</option>
+        <option value="14days">Last 14 Days</option>
+        <option value="30days">Last 30 Days</option>
+      </select>
+      <button class="btn-download">Download PDF</button>
+    </div>
+  </header>
+
+  <!-- Chart Section -->
+  <div class="chart-section">
+    <canvas id="timeChart"></canvas>
+    <p class="chart-title">Time Distribution by Category</p>
+  </div>
+
+  <!-- Table Section -->
+  <div class="table-section">
+    <table>
+      <thead>
+      <tr>
+        <th>Task Title</th>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Duration</th>
+        <th>Description/Remarks</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Homepage Development</td>
+        <td>08-05-2024</td>
+        <td>Frontend Development</td>
+        <td>03:10:01</td>
+        <td>Implementing new design / Completed header section</td>
+      </tr>
+      <tr>
+        <td>Team Meeting</td>
+        <td>11-05-2024</td>
+        <td>Team Meeting</td>
+        <td>01:00:51</td>
+        <td>Weekly sprint planning / Discussed new feature requirements</td>
+      </tr>
+      <tr>
+        <td>Documentation</td>
+        <td>12-05-2024</td>
+        <td>Research Engineer–R&D</td>
+        <td>02:30:11</td>
+        <td>API documentation update</td>
+      </tr>
+      <tr>
+        <td>User Research</td>
+        <td>12-05-2024</td>
+        <td>Research Engineer–R&D</td>
+        <td>05:30:00</td>
+        <td>User views and analysis</td>
+      </tr>
+      <tr>
+        <td>Bug Fixes</td>
+        <td>13-05-2024</td>
+        <td>Backend Development</td>
+        <td>06:40:01</td>
+        <td>Critical bug fixes</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<script src="../assets/js/chart.js"></script>
+
+
+<script>
+    const ctx = document.getElementById('timeChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Development', 'Design', 'QA Testing', 'Research', 'Team Meeting'],
+            datasets: [{
+                label: 'Time Distribution',
+                data: [25, 15, 10, 30, 20],
+                backgroundColor: ['#007bff', '#fd7e14', '#ffc107', '#20c997', '#dc3545'],
+                hoverOffset: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'right',
+                },
+            }
+        }
+    });
+</script>
+</body>
+</html>
+
+
+
+
+

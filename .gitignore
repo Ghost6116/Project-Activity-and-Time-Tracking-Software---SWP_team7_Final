@@ -1,0 +1,18 @@
+# Java / Maven
+Backend_Java/ProjectDiaryBackendMain/target/
+*.class
+
+# React / Node
+Front End ( React App )/node_modules/
+Front End ( React App )/build/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment and logs
+.env
+.env.*
+*.log

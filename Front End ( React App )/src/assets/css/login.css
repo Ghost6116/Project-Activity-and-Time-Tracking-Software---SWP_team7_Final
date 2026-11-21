@@ -1,0 +1,121 @@
+/* Reset and Basic Styles */
+
+
+.loginPanel {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+/* Container */
+.login-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading */
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #0c264a;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    font-size: 0.8rem;
+    color: #EE7100;
+    text-decoration: none;
+    float: right;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #EE7100;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #efa869;
+}
+
+/* Signup Text */
+.signup-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+.signup-link {
+    color: #EE7100;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+
+/*dashboarad below */
+
+nav#mySidebar {
+    background: #152259 !important;
+    color: white !important;
+}
+
+.w3-top.w3-card {
+    background: white !important;
+}
+div#main-content {
+    background: white !important;;
+}
+
+.w3-flex-bar.w3-theme.w3-left-align {
+    background: #152259 !important;
+    width: 230px;
+    color: white !important;
+    height: 100% !important;
+}

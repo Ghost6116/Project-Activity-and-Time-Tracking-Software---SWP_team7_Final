@@ -1,0 +1,59 @@
+  /* Sidebar */
+  .sidebar {
+    width: 240px;
+    background-color: #EE7100; /* Orange background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center logo */
+}
+
+.sidebar-logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%; /* Slight rounding for the logo */
+}
+.sidebar-logo h3 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+.sidebar-nav {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center navigation items */
+    gap: 10px; /* Add space between items */
+}
+
+.sidebar-item {
+    
+    background-color: #ff9e61; /* White for buttons */
+    border: none;
+    padding: 10px 20px; /* Add padding for better button size */
+    border-radius: 5px;
+    font-size: 15px;
+    color: #ffffff; /* Orange text for contrast */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    width: 90%; /* Keep buttons aligned and consistent */
+    text-decoration: none;
+    
+    
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+    background-color: #ffffff; /* Highlighted orange on hover */
+    color: rgb(0, 0, 0); /* White text when active or hovered */
+    font-weight: medium; /* Slightly bolder text */
+}

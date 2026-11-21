@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Admin.css */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border: 1px solid #ffa366;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #ff6600;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ffa366;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #ffa366;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #ffe0cc; /* Light shade of #ff6600 */
+}
+
+.styled-table tbody tr:hover {
+    background-color: #ffd1b3; /* Medium-light shade of #ff6600 */
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ff6600;
+}
+
+.styled-table td:last-child {
+    text-align: center;
+    color: #ff6600;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.styled-table td:last-child:hover {
+    text-decoration: underline;
+    color: #cc5200; /* Darker shade of #ff6600 */
+}
+

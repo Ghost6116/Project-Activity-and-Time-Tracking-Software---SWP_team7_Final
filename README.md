@@ -2,21 +2,12 @@
 
 
 
-## Team-07 
-# Roles and Responsibilities
 
-- Sai Venkat Athmakur- Project Manager
-- Ammar Haider- Backend developer - Database manager
-- Md Tareq Hasan- Frontend integration
-- Muhammad Aaliyan- Frontend integration
-- Shams Khan- Frontend developer
-- Suresh Dangeti- Frontend developer
-- Anshkumar Anilbhai Gogadani- UI/UX Designer
-- Shashank Matta- UI/UX Designer
+# UI/UX Design
+
+Figma Link -  https://www.figma.com/design/aWxbGV4d95DXo4hTnRzTIf/SWP---7---PA-TT--1-?node-id=0-1&t=IMZyBv03Tzuqfyta-1
 
 
-
-## Read Wiki Pages in this gitlab for extra information about our initial plans and milestones - (https://git.oth-aw.de/d796/project-activity-and-time-tracking-software-swp_team7_final/-/wikis/pages)
 
 ## ABSTRACT
 The Project Activity and Time Tracking Software is a comprehensive web-based solution designed to enhance project management, activity logging, and time analysis for teams and individuals. This system enables users to create projects log activities under hierarchical categories. It incorporates features such as real-time time tracking, project diaries for documenting objectives, challenges, and solutions, and robust role-based access control for Admins, Project Managers, and Team Members.
@@ -373,14 +364,8 @@ The Project Activity and Time Tracking Software leverages a modern, scalable tec
 ## ADD YOUR FILES
 ```
 cd existing_repo
-git remote add origin https://git.oth-aw.de/d796/project-activity-and-time-tracking-software-swp_team7_final.git
+git remote add origin https://github.com/Ghost6116/Project-Activity-and-Time-Tracking-Software---SWP_team7_Final/tree/main
 git branch -M main
 git push -uf origin main
 ```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://git.oth-aw.de/d796/project-activity-and-time-tracking-software-swp_team7_final/-/settings/integrations)
-
-
 
